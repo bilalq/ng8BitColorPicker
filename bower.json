@@ -1,0 +1,33 @@
+{
+  "name": "ng8BitColorPicker",
+  "version": "0.0.0",
+  "homepage": "https://github.com/bilalq/ng8BitColorPicker",
+  "authors": [
+    "Bilal Quadri <bilalquadri92@gmail.com>"
+  ],
+  "description": "Angular directive for an eight-bit color picker component",
+  "main": "lib/ng8BitColorPicker.js",
+  "keywords": [
+    "8bit",
+    "eight",
+    "bit",
+    "256",
+    "color",
+    "picker",
+    "directive"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "*",
+    "!lib/ng8BitColorPicker.js",
+    "!LICENSE",
+    "!README.md"
+  ],
+  "dependencies": {
+    "eight-bit-color-picker": "~1.1.0",
+    "angular": "~1.2.16"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.2.16"
+  }
+}
