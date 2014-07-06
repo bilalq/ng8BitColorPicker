@@ -1,0 +1,34 @@
+{
+  "name": "ng8BitColorPicker",
+  "version": "0.0.0",
+  "description": "Angular directive for an eight-bit color picker component",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bilalq/ng8BitColorPicker.git"
+  },
+  "author": "Bilal Quadri <bilalquadri92@gmail.com> (http://bilalquadri.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bilalq/ng8BitColorPicker/issues"
+  },
+  "homepage": "https://github.com/bilalq/ng8BitColorPicker",
+  "devDependencies": {
+    "gulp": "^3.8.5",
+    "gulp-jshint": "^1.6.4",
+    "gulp-bower": "0.0.6",
+    "karma": "^0.12.16",
+    "karma-coffee-preprocessor": "^0.2.1",
+    "karma-coverage": "^0.2.4",
+    "karma-jasmine": "^0.1.5",
+    "karma-growl-reporter": "^0.1.1",
+    "karma-firefox-launcher": "^0.1.3",
+    "jshint-stylish": "^0.2.0",
+    "lodash": "^2.4.1"
+  }
+}
