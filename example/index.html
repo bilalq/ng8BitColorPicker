@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>ng8BitColorPicker</title>
+    <link rel="stylesheet" href="../bower_components/eight-bit-color-picker/lib/eight-bit-color-picker.css" />
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/eight-bit-color-picker/lib/eight-bit-color-picker.js"></script>
+    <script src="../lib/ng8BitColorPicker.js"></script>
+  </head>
+  <body ng-app="demoApp">
+
+
+    <div ng-controller="demoCtrl">
+      <eight-bit-color-picker></eight-bit-color-picker>
+      <eight-bit-color-picker color="color"></eight-bit-color-picker>
+    </div>
+
+    <script>
+      (function() {
+        var demo = angular.module('demoApp', ['eightBitColorPicker'])
+        demo.controller('demoCtrl', function($scope) {
+          $scope.color = 119
+        })
+      }).call(this)
+    </script>
+
+  </body>
+
+</html>
