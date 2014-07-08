@@ -1,7 +1,7 @@
 describe 'EightBitColorPicker directive', ->
 
   # Load module and references to dependencies
-  beforeEach module 'eightBitColorPicker'
+  beforeEach module 'bilalq.eightBitColorPicker'
   beforeEach inject (@$window, @$rootScope, @$compile) ->
     @scope = @$rootScope.$new()
 
