@@ -12,14 +12,14 @@
 
 
     <div ng-controller="demoCtrl">
-      <eight-bit-color-picker></eight-bit-color-picker>
-      <eight-bit-color-picker color="color"></eight-bit-color-picker>
+      <eight-bit-color-picker ng-model="picker" color="color"></eight-bit-color-picker>
     </div>
 
     <script>
       (function() {
         var demo = angular.module('demoApp', ['eightBitColorPicker'])
         demo.controller('demoCtrl', function($scope) {
+          window.scope = $scope
           $scope.color = 119
         })
       }).call(this)

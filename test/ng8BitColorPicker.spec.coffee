@@ -46,8 +46,35 @@ describe 'EightBitColorPicker directive', ->
       @scope.palette[119] = '#000000'
 
       @$compile(el)(@scope)
-      expect(@scope.foo).toBe '#000000'
+      expect(@scope.foo.get8BitColor()).toBe 119
+      expect(@scope.foo.getHexColor()).toBe '#000000'
 
       @scope.color = 120
       @$rootScope.$digest()
-      expect(@scope.foo).toBe '#ffffff'
+      expect(@scope.foo.get8BitColor()).toBe 120
+      expect(@scope.foo.getHexColor()).toBe '#ffffff'
+
+    it 'updates ngModel & scope when user picks a new color', ->
+      template = '<eight-bit-color-picker
+        color="color"
+        palette="palette"
+        ng-model="foo">
+      <eight-bit-color-picker>'
+      el = angular.element template
+      @scope.color = 119
+      @scope.palette = ('#ffffff' for [0..255])
+      @scope.palette[119] = '#000000'
+      @$compile(el)(@scope)
+      
+      expect(@scope.color).toBe(119)
+      expect(@scope.foo.get8BitColor()).toBe 119
+      expect(@scope.foo.getHexColor()).toBe '#000000'
+
+      @scope.foo.updateColor(121)
+
+      expect(@scope.color).toBe(121)
+      expect(@scope.foo.get8BitColor()).toBe 121
+      expect(@scope.foo.getHexColor()).toBe '#ffffff'
+
+
+
