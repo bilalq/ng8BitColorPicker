@@ -1,6 +1,6 @@
 {
   "name": "ng8BitColorPicker",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Angular directive for an eight-bit color picker component",
   "directories": {
     "test": "test"
