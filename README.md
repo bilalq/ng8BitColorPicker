@@ -4,10 +4,10 @@ ng8BitColorPicker
 [![Build Status][travis-badge]][travis-url]
 [![Coverage Status][coveralls-badge]][coveralls-url]
 
-> Angular directive for the [eight-bit color picker][color-picker-url] library
+> Angular directive for an eight-bit color picker
 
 This package wraps around the [eight-bit color picker][color-picker-url] library
-and exposes it as a simple to use Angular directive.
+and exposes it as an easy to use Angular directive.
 
 Install
 -------
