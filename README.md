@@ -14,6 +14,14 @@ Install
 
     bower install --save ng8BitColorPicker
 
+Consume
+-------
+```javascript
+angular.module('myModule', [
+  'bilalq.ng8BitColorPicker'
+  // Other dependencies...
+])
+```
 Usage Examples
 --------------
 
